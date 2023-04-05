@@ -1,0 +1,22 @@
+
+FUNCTION palindrome(word: STRING [n],n:INTEGER;) : BOOLEAN;
+VAR
+    str,end:INTEGER;
+
+BEGIN
+   IF (n<=0) THEN RETURN TRUE
+   ELSE
+   str:= 0;
+   n:= length.word;
+   end := n - 1;
+WHILE (str<=end) DO
+    IF (word[str]=word[end]) THEN
+        str:=str+1:
+        end:=end-1;
+         RETURN TRUE
+        ELSE
+        RETURN FALSE
+    END_IF
+    
+END_WHILE
+
