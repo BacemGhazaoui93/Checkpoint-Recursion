@@ -1,0 +1,12 @@
+FUNCTION psum(p : ARRAY_OF INTEGER[n+1]; x:INTEGER) : INTEGER
+VAR
+    set_declarations
+BEGIN
+    IF (n:=0) THEN
+        RETURN p[0]
+    ELSE
+        RETURN x * (psum(p[n], x)) + p[n]
+    END_IF
+    
+END
+
